@@ -1,87 +1,46 @@
 package com.itismeucci.stefanelli;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
+import com.sun.net.httpserver.*;
+
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.Socket;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 
-public class ClientHandler extends Thread {
- 
-    public Socket socket;
-    public BufferedReader input;
-    public DataOutputStream output;
-
-    public ClientHandler(Socket socket) throws IOException {
-
-        this.socket = socket;
-        input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        output = new DataOutputStream(socket.getOutputStream());
-    }
-
-    // GET / HTTP/1.1
-    // Host: localhost:2222
-    // Connection: keep-alive
-    // sec-ch-ua: "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"
-    // sec-ch-ua-mobile: ?0
-    // sec-ch-ua-platform: "Linux"
-    // Upgrade-Insecure-Requests: 1
-    // User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
-    // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-    // Sec-Fetch-Site: none
-    // Sec-Fetch-Mode: navigate
-    // Sec-Fetch-User: ?1
-    // Sec-Fetch-Dest: document
-    // Accept-Encoding: gzip, deflate, br
-    // Accept-Language: en-US,en;q=0.9
+public class ClientHandler implements HttpHandler {
 
     @Override
-    public void run() {
+    public void handle(HttpExchange exchange) throws IOException {
 
-        while (true) {
+        String requestedPath = exchange.getRequestURI().getPath();
+        String fileType = "text/html"; //default
 
-            try {
+        if (requestedPath.equals("/")) requestedPath = "challenge.html"; //se questo è per forza html quindi non ha senso controllare    
+        else if (requestedPath.endsWith(".css")) fileType = "text/css"; //scegli il Content-Type giusto
+        else if (requestedPath.endsWith(".js")) fileType = "text/javascript";
+        else if (requestedPath.endsWith(".png")) fileType = "image/png";
 
-                String request = input.readLine();
-                String pageRequested = request.split(" ")[1];
-                //System.out.println(pageRequested);
+        System.out.println(Paths.get("src/main/resources/", requestedPath));
 
-                String reply = "";
+        byte[] outputFile;
 
-                switch (pageRequested) {
+        if (!new File("src/main/resources/" + requestedPath).isFile()) {
 
-                    case "/": 
-                        reply = Files.readString(new File("index.html").toPath());
-                        break;
-
-                    case "uccello":
-                        break;
-
-                    case "pipistrello":
-                        break;
-
-                    case "nootnoot":
-                        break;
-
-                    default:
-                        reply = "";
-                        break;
-                }
-
-                output.writeBytes("HTTP/1.1 200 OK\r\n");
-                output.writeBytes("Content-type: text/html\r\n\r\n");
-
-                output.writeBytes(reply);
-
-
-            } catch (Exception e) {
-
-                System.out.println("gogo");
-                e.printStackTrace();
-            }
-            break;
+            outputFile = Files.readAllBytes(Paths.get("src/main/resources/Error404.html"));
+            exchange.getResponseHeaders().set("Content-Type", "text/html");
+            exchange.sendResponseHeaders(404, outputFile.length);
+            exchange.getResponseBody().write(outputFile);
+            exchange.close();
+            return;
         }
-    }
+
+        outputFile = Files.readAllBytes(Paths.get("src/main/resources/", requestedPath)); //leggi il file e storalo in outputFile
+
+        System.out.println(" - " + outputFile.length);
+
+        exchange.getResponseHeaders().set("Content-Type", fileType); //setta il Content-Type
+        exchange.sendResponseHeaders(200, outputFile.length); //OK + headers + length
+        exchange.getResponseBody().write(outputFile);
+        exchange.close();
+    }    
 }

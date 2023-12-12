@@ -1,0 +1,116 @@
+body {
+
+    text-align: center;
+    background-image: url("./img/bricks.png");
+}
+
+.big {
+
+    font-size: 60px;
+    font-weight: 1000;
+    color: lightgray;
+    text-shadow: 4px 4px #000;
+}
+
+.scug {
+
+    width: 8%;
+    margin: 0 1%;
+    filter: brightness(0.7);
+}
+
+.scug:hover {
+
+    filter:brightness(1.1)
+}
+
+.scug-difficulty {
+
+    width: 8%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.difficulty {
+
+    display: none;
+    text-align: center;
+    height: 60px;
+    width: 18%;
+    font-size: 120%;
+    font-weight: 1000;
+    color: #222;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 0.4%;
+    margin-right: 0.4%;
+    filter:brightness(0.8)
+}
+
+.difficulty > * {
+
+    margin-top: 18px;
+}
+
+.difficulty:hover {
+
+    filter:brightness(1.1)
+}
+
+#easiest {
+
+    background-color: lightgreen;
+}
+
+#easy {
+
+    background-color: yellow;
+}
+
+#average {
+
+    background-color: coral;
+}
+
+#hard {
+
+    background-color: red;
+}
+
+#hardest {
+
+    background-color: purple;
+}
+
+table {
+    font-size: 150%;
+    font-weight: 1000;
+    color: #222;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    text-align: left;
+    width: 50%;
+}
+
+td {
+    border: 1px solid black;
+    background: linear-gradient(90deg, #e5e5e5, #999);
+    margin: 0;
+    width: 90%;
+}
+
+.pnts {
+
+    text-align: center;
+    width: 10%;
+    background: linear-gradient(90deg, #999, #888);
+}
+
+.table-header {
+
+    background: #777;
+}
