@@ -24,7 +24,7 @@ public class ClientHandler implements HttpHandler {
 
         byte[] outputFile;
 
-        if (!new File("src/main/resources/" + requestedPath).isFile()) {
+        if (!new File("src/main/resources/" + requestedPath).isFile()) { //se non esiste la pagina allora manda 404 e la pagina associata
 
             outputFile = Files.readAllBytes(Paths.get("src/main/resources/Error404.html"));
             exchange.getResponseHeaders().set("Content-Type", "text/html");
