@@ -415,5 +415,6 @@ window.onload = () => {
     setTimeout(() => {
         if (loadChallenges())
             onAcceptLoad();
+        else localStorage.clear();
     }, 100);
 };
