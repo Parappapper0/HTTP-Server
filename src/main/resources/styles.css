@@ -61,27 +61,27 @@ body {
 
 #easiest {
 
-    background-color: lightgreen;
+    background-image: linear-gradient(lightgreen, green);
 }
 
 #easy {
 
-    background-color: yellow;
+    background-image: linear-gradient(yellow, goldenrod);
 }
 
 #average {
 
-    background-color: coral;
+    background-image: linear-gradient(coral, #c04128);
 }
 
 #hard {
 
-    background-color: red;
+    background-image: linear-gradient(red, darkred);
 }
 
 #hardest {
 
-    background-color: purple;
+    background-image: linear-gradient(darkorchid, rgb(97, 0, 97));
 }
 
 table {
