@@ -1,0 +1,492 @@
+[
+    {
+        "id": 1,
+        "challengeName": "Kill Moon",
+        "points": {
+            "monk": 1,
+            "survivor": 1,
+            "hunter": 1,
+            "gourmand": 1,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 2,
+        "challengeName": "Tame a Lizard using Pups",
+        "points": {
+            "monk": 3,
+            "survivor": 3,
+            "hunter": 100,
+            "gourmand": 3,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 3,
+        "challengeName": "Explode Yourself",
+        "points": {
+            "monk": 1,
+            "survivor": 1,
+            "hunter": 1,
+            "gourmand": 1,
+            "artificer": 1,
+            "rivulet": 1,
+            "spearmaster": 1,
+            "saint": 1
+        }
+    },
+    {
+        "id": 4,
+        "challengeName": "Bonk a King Vulture to Death",
+        "points": {
+            "monk": 100,
+            "survivor": 100,
+            "hunter": 100,
+            "gourmand": 2,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 5,
+        "challengeName": "Kill a Red Centipede without using Spore Puffs",
+        "points": {
+            "monk": 5,
+            "survivor": 5,
+            "hunter": 5,
+            "gourmand": 4,
+            "artificer": 3,
+            "rivulet": 5,
+            "spearmaster": 3,
+            "saint": 100
+        }
+    },
+    {
+        "id": 6,
+        "challengeName": "Kill all Scavengers at a toll (5 minimum)",
+        "points": {
+            "monk": 5,
+            "survivor": 5,
+            "hunter": 4,
+            "gourmand": 4,
+            "artificer": 3,
+            "rivulet": 4,
+            "spearmaster": 3,
+            "saint": 100
+        }
+    },
+    {
+        "id": 7,
+        "challengeName": "Deliver 2 of Moon's Neuron Flies to Five Pebbles",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 4,
+            "gourmand": 5,
+            "artificer": 100,
+            "rivulet": 3,
+            "spearmaster": 4,
+            "saint": 3
+        }
+    },
+    {
+        "id": 8,
+        "challengeName": "Throw a Singularity Bomb at Five Pebbles",
+        "points": {
+            "monk": 100,
+            "survivor": 100,
+            "hunter": 100,
+            "gourmand": 2,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 9,
+        "challengeName": "Store 5 King Vulture Masks",
+        "points": {
+            "monk": 100,
+            "survivor": 5,
+            "hunter": 5,
+            "gourmand": 4,
+            "artificer": 2,
+            "rivulet": 4,
+            "spearmaster": 3,
+            "saint": 100
+        }
+    },
+    {
+        "id": 10,
+        "challengeName": "Starve, then fill your stomach with quarter pip foods",
+        "points": {
+            "monk": 100,
+            "survivor": 100,
+            "hunter": 3,
+            "gourmand": 100,
+            "artificer": 3,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 11,
+        "challengeName": "Befriend a Cyan Lizard for it to Zoom into the Void",
+        "points": {
+            "monk": 4,
+            "survivor": 5,
+            "hunter": 2,
+            "gourmand": 3,
+            "artificer": 3,
+            "rivulet": 2,
+            "spearmaster": 2,
+            "saint": 100
+        }
+    },
+    {
+        "id": 12,
+        "challengeName": "Stock up on 4 lanterns so you never freeze",
+        "points": {
+            "monk": 2,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 1,
+            "artificer": 2,
+            "rivulet": 2,
+            "spearmaster": 2,
+            "saint": 3
+        }
+    },
+    {
+        "id": 13,
+        "challengeName": "Kill a Strawberry Lizard",
+        "points": {
+            "monk": 100,
+            "survivor": 100,
+            "hunter": 100,
+            "gourmand": 100,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 3
+        }
+    },
+    {
+        "id": 14,
+        "challengeName": "Tame a Strawberry Lizard (They cute<3)",
+        "points": {
+            "monk": 5,
+            "survivor": 100,
+            "hunter": 100,
+            "gourmand": 100,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 3
+        }
+    },
+    {
+        "id": 15,
+        "challengeName": "Visit all Echoes",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 4,
+            "gourmand": 5,
+            "artificer": 5,
+            "rivulet": 4,
+            "spearmaster": 4,
+            "saint": 100
+        }
+    },
+    {
+        "id": 16,
+        "challengeName": "Get the Nomad in a Single Cycle",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 4,
+            "gourmand": 5,
+            "artificer": 4,
+            "rivulet": 4,
+            "spearmaster": 4,
+            "saint": 4
+        }
+    },
+    {
+        "id": 17,
+        "challengeName": "Complete the Food Quest",
+        "points": {
+            "monk": 100,
+            "survivor": 100,
+            "hunter": 100,
+            "gourmand": 5,
+            "artificer": 100,
+            "rivulet": 100,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 18,
+        "challengeName": "Lineage a Red Centipede",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 3,
+            "gourmand": 4,
+            "artificer": 3,
+            "rivulet": 4,
+            "spearmaster": 3,
+            "saint": 5
+        }
+    },
+    {
+        "id": 19,
+        "challengeName": "Kill at least 1 of every Lizard (No Train Lizards nor Reds)",
+        "points": {
+            "monk": 5,
+            "survivor": 5,
+            "hunter": 5,
+            "gourmand": 5,
+            "artificer": 5,
+            "rivulet": 5,
+            "spearmaster": 5,
+            "saint": 100
+        }
+    },
+    {
+        "id": 20,
+        "challengeName": "Demask a Vulture with a backflip",
+        "points": {
+            "monk": 100,
+            "survivor": 3,
+            "hunter": 3,
+            "gourmand": 4,
+            "artificer": 3,
+            "rivulet": 4,
+            "spearmaster": 2,
+            "saint": 100
+        }
+    },
+    {
+        "id": 21,
+        "challengeName": "Stock up on 10 blue fruits (same shelter)",
+        "points": {
+            "monk": 1,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 1,
+            "artificer": 2,
+            "rivulet": 1,
+            "spearmaster": 2,
+            "saint": 3
+        }
+    },
+    {
+        "id": 22,
+        "challengeName": "Store 3 different Vulture Grubs in the same shelter",
+        "points": {
+            "monk": 2,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 2,
+            "artificer": 2,
+            "rivulet": 2,
+            "spearmaster": 2,
+            "saint": 100
+        }
+    },
+    {
+        "id": 23,
+        "challengeName": "You may avoid completing a Challenge",
+        "points": {
+            "monk": -4,
+            "survivor": -4,
+            "hunter": -4,
+            "gourmand": -4,
+            "artificer": -4,
+            "rivulet": -4,
+            "spearmaster": -4,
+            "saint": -4
+        }
+    },
+    {
+        "id": 24,
+        "challengeName": "You can only use One Hand (Crafting Allowed)",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 3,
+            "gourmand": 4,
+            "artificer": 4,
+            "rivulet": 4,
+            "spearmaster": 5,
+            "saint": 3
+        }
+    },
+    {
+        "id": 25,
+        "challengeName": "You can't use your Stomach (Crafting Allowed)",
+        "points": {
+            "monk": 4,
+            "survivor": 4,
+            "hunter": 4,
+            "gourmand": 4,
+            "artificer": 3,
+            "rivulet": 4,
+            "spearmaster": 100,
+            "saint": 5
+        }
+    },
+    {
+        "id": 26,
+        "challengeName": "You can't use Passage Perk",
+        "points": {
+            "monk": 2,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 2,
+            "artificer": 1,
+            "rivulet": 1,
+            "spearmaster": 2,
+            "saint": 1
+        }
+    },
+    {
+        "id": 27,
+        "challengeName": "You can't use Karma Flower Perk",
+        "points": {
+            "monk": 1,
+            "survivor": 1,
+            "hunter": 1,
+            "gourmand": 1,
+            "artificer": 2,
+            "rivulet": 1,
+            "spearmaster": 1,
+            "saint": 1
+        }
+    },
+    {
+        "id": 28,
+        "challengeName": "You can't use Neuron Glow Perk",
+        "points": {
+            "monk": 2,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 1,
+            "artificer": 2,
+            "rivulet": 2,
+            "spearmaster": 2,
+            "saint": 2
+        }
+    },
+    {
+        "id": 29,
+        "challengeName": "You can't use Back Spear Perk",
+        "points": {
+            "monk": 1,
+            "survivor": 2,
+            "hunter": 100,
+            "gourmand": 1,
+            "artificer": 2,
+            "rivulet": 2,
+            "spearmaster": 1,
+            "saint": 100
+        }
+    },
+    {
+        "id": 30,
+        "challengeName": "You can't use Item Crafting Perk",
+        "points": {
+            "monk": 2,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 100,
+            "artificer": 2,
+            "rivulet": 2,
+            "spearmaster": 2,
+            "saint": 2
+        }
+    },
+    {
+        "id": 31,
+        "challengeName": "You can't use Artificer Blast Perk",
+        "points": {
+            "monk": 3,
+            "survivor": 4,
+            "hunter": 4,
+            "gourmand": 5,
+            "artificer": 100,
+            "rivulet": 3,
+            "spearmaster": 4,
+            "saint": 4
+        }
+    },
+    {
+        "id": 32,
+        "challengeName": "You can't use Explosion Resistance Perk",
+        "points": {
+            "monk": 1,
+            "survivor": 1,
+            "hunter": 1,
+            "gourmand": 1,
+            "artificer": 100,
+            "rivulet": 1,
+            "spearmaster": 1,
+            "saint": 1
+        }
+    },
+    {
+        "id": 33,
+        "challengeName": "You can't use High Agility Perk",
+        "points": {
+            "monk": 3,
+            "survivor": 3,
+            "hunter": 3,
+            "gourmand": 5,
+            "artificer": 3,
+            "rivulet": 100,
+            "spearmaster": 3,
+            "saint": 2
+        }
+    },
+    {
+        "id": 34,
+        "challengeName": "You can't use Spear Dual Wielding Perk",
+        "points": {
+            "monk": 2,
+            "survivor": 3,
+            "hunter": 3,
+            "gourmand": 1,
+            "artificer": 3,
+            "rivulet": 3,
+            "spearmaster": 100,
+            "saint": 100
+        }
+    },
+    {
+        "id": 35,
+        "challengeName": "Don't kill ANY Blue Lizard",
+        "points": {
+            "monk": 1,
+            "survivor": 2,
+            "hunter": 2,
+            "gourmand": 2,
+            "artificer": 2,
+            "rivulet": 1,
+            "spearmaster": 2,
+            "saint": 100
+        }
+    }
+]
