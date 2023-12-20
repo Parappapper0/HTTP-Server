@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rain World Challenges</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script type="module" defer>
+        import {selectSlug, selectDifficulty} from "/scripts.js";
+        let a = Array.from(document.getElementsByClassName('scug'));
+        for(let i = 0; i < a.length; i++) {
+            a[i].addEventListener('click', selectSlug, i);
+        }
+    </script>
+    <script type="module" src="/graphics.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
